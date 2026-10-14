@@ -109,9 +109,6 @@ nav a[aria-current="page"] { color: var(--deep); background: #f3d9bd; }
 .btn.ghost:hover { background: rgba(255,255,255,.12); border-color: #fbf6ee; }
 
 @media (max-width: 640px) {
-  th, td { display: block; padding: 2px 0; border: 0; }
-  tr { display: block; padding: 8px 0; border-bottom: 1px solid var(--line); }
-  tr:last-child { border-bottom: 0; }
   .hero img { height: 260px; object-position: 78% center; }
   .hero-copy { position: static; background: var(--deep); padding: 28px 0 36px; }
   .hero h1 { max-width: none; text-shadow: none; }
@@ -193,3 +190,9 @@ button:hover { background: var(--copper-dark); }
 /* ---------- footer ---------- */
 .site-footer { margin-top: 56px; background: var(--deep); color: #b9d0c7; font-size: .92rem; }
 .site-footer p { max-width: 1080px; margin: 0 auto; padding: 22px 24px; }
+
+@media (max-width: 640px) {
+  .hours th, .hours td { display: block; padding: 2px 0; border: 0; }
+  .hours tr { display: block; padding: 8px 0; border-bottom: 1px solid var(--line); }
+  .hours tr:last-child { border-bottom: 0; }
+}
