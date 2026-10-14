@@ -4,40 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About &mdash; The Copper Kettle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Young+Serif&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <span class="logo">The Copper Kettle</span>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html" aria-current="page">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<header class="site-header">
+  <div class="bar">
+    <a class="logo" href="index.html">The Copper Kettle</a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
-<main>
+<div class="page-title"><div class="inner">
   <h1>About us</h1>
-  <p class="tagline">Three people, one roaster, a lot of flour.</p>
-
-  <p>The Copper Kettle started as a weekend stall at the Mill Lane market.
+  <p>Three people, one roaster, a lot of flour.</p>
+</div></div>
+<main>
+  <p class="lede">The Copper Kettle started as a weekend stall at the Mill Lane market.
   Enough people kept coming back that in 2019 we took the lease on the old
   stationery shop next door and never left.</p>
 
-  <h2>What we care about</h2>
-  <ul>
-    <li>Beans bought direct from two estates in Chikmagalur.</li>
-    <li>Bread made the night before, never the week before.</li>
-    <li>Ceramic cups. Paper cups only if you ask twice.</li>
-  </ul>
-
-  <h2>The people</h2>
-  <ul>
-    <li><strong>Meera</strong> &mdash; roasting and anything involving a ledger.</li>
-    <li><strong>Asif</strong> &mdash; the ovens, from 4 am.</li>
-    <li><strong>Tenzin</strong> &mdash; the bar, and the playlist nobody argues with.</li>
-  </ul>
+  <div class="split">
+    <section aria-labelledby="care-h">
+      <h2 id="care-h">What we care about</h2>
+      <ul class="plain">
+        <li>Beans bought direct from two estates in Chikmagalur.</li>
+        <li>Bread made the night before, never the week before.</li>
+        <li>Ceramic cups. Paper cups only if you ask twice.</li>
+      </ul>
+    </section>
+    <section aria-labelledby="people-h">
+      <h2 id="people-h">The people</h2>
+      <ul class="plain">
+        <li><strong>Meera</strong> &mdash; roasting and anything involving a ledger.</li>
+        <li><strong>Asif</strong> &mdash; the ovens, from 4 am.</li>
+        <li><strong>Tenzin</strong> &mdash; the bar, and the playlist nobody argues with.</li>
+      </ul>
+    </section>
+  </div>
 </main>
-<footer>
+<footer class="site-footer">
   <p>&copy; 2026 The Copper Kettle &middot; 14 Mill Lane, Dehradun &middot; (0135) 555-0142</p>
 </footer>
 </body>

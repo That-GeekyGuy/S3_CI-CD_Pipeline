@@ -4,43 +4,64 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Home &mdash; The Copper Kettle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Young+Serif&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <span class="logo">The Copper Kettle</span>
-  <nav>
-    <a href="index.html" aria-current="page">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<header class="site-header">
+  <div class="bar">
+    <a class="logo" href="index.html">The Copper Kettle</a>
+    <nav aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
+<section class="hero">
+  <img src="hero.svg" alt="A copper kettle steaming on a shelf in front of misty green hills at dawn">
+  <div class="hero-copy">
+    <div class="inner">
+      <h1>Slow coffee, warm bread</h1>
+      <p>A small corner cafe on Mill Lane, open since 2019.</p>
+      <div class="actions">
+        <a class="btn" href="#menu">See the menu</a>
+        <a class="btn ghost" href="contact.html">Find us</a>
+      </div>
+    </div>
+  </div>
+</section>
 <main>
-  <h1>Slow coffee, warm bread</h1>
-  <p class="tagline">A small corner cafe, open since 2019.</p>
-
-  <p>We roast our beans in-house every Tuesday and bake whatever the morning
+  <p class="lede">We roast our beans in-house every Tuesday and bake whatever the morning
   feels like. No screens, no rush &mdash; just a table by the window and
   something good in a cup.</p>
 
-  <h2>On the menu</h2>
-  <ul class="menu">
-    <li><span>Filter coffee</span> <span class="price">&#8377;120</span></li>
-    <li><span>Flat white</span> <span class="price">&#8377;180</span></li>
-    <li><span>Masala chai</span> <span class="price">&#8377;90</span></li>
-    <li><span>Sourdough toast &amp; jam</span> <span class="price">&#8377;150</span></li>
-    <li><span>Walnut banana bread</span> <span class="price">&#8377;160</span></li>
-    <li><span>Soup of the day</span> <span class="price">&#8377;220</span></li>
-  </ul>
+  <div class="split">
+    <section id="menu" aria-labelledby="menu-h">
+      <h2 id="menu-h">On the menu</h2>
+      <ul class="menu">
+        <li><span>Filter coffee</span> <span class="price">&#8377;120</span></li>
+        <li><span>Flat white</span> <span class="price">&#8377;180</span></li>
+        <li><span>Masala chai</span> <span class="price">&#8377;90</span></li>
+        <li><span>Sourdough toast &amp; jam</span> <span class="price">&#8377;150</span></li>
+        <li><span>Walnut banana bread</span> <span class="price">&#8377;160</span></li>
+        <li><span>Soup of the day</span> <span class="price">&#8377;220</span></li>
+      </ul>
+    </section>
 
-  <h2>Opening hours</h2>
-  <table>
-    <tr><th>Monday &ndash; Friday</th><td>7:30 am &ndash; 7:00 pm</td></tr>
-    <tr><th>Saturday</th><td>8:00 am &ndash; 9:00 pm</td></tr>
-    <tr><th>Sunday</th><td>8:00 am &ndash; 3:00 pm</td></tr>
-  </table>
+    <section class="hours" aria-labelledby="hours-h">
+      <h2 id="hours-h">Opening hours</h2>
+      <table>
+        <tr><th scope="row">Monday &ndash; Friday</th><td>7:30 am &ndash; 7:00 pm</td></tr>
+        <tr><th scope="row">Saturday</th><td>8:00 am &ndash; 9:00 pm</td></tr>
+        <tr><th scope="row">Sunday</th><td>8:00 am &ndash; 3:00 pm</td></tr>
+      </table>
+    </section>
+  </div>
 </main>
-<footer>
+<footer class="site-footer">
   <p>&copy; 2026 The Copper Kettle &middot; 14 Mill Lane, Dehradun &middot; (0135) 555-0142</p>
 </footer>
 </body>

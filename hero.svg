@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A copper kettle steaming on a shelf in front of misty green hills at dawn">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f2b28"/>
+      <stop offset=".55" stop-color="#1d4f48"/>
+      <stop offset="1" stop-color="#3f8174"/>
+    </linearGradient>
+    <linearGradient id="copper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e08a4f"/>
+      <stop offset=".55" stop-color="#b8602a"/>
+      <stop offset="1" stop-color="#7d3d17"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#f6c58c"/>
+      <stop offset="1" stop-color="#f6c58c" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .steam { fill: none; stroke: #f3ece0; stroke-linecap: round; stroke-width: 7; opacity: 0; animation: rise 7s ease-in-out infinite; }
+      .s2 { animation-delay: 2.3s; stroke-width: 5; }
+      .s3 { animation-delay: 4.6s; stroke-width: 6; }
+      @keyframes rise {
+        0%   { transform: translateY(40px); opacity: 0; }
+        25%  { opacity: .55; }
+        100% { transform: translateY(-70px); opacity: 0; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .steam { animation: none; opacity: .4; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="640" fill="url(#sky)"/>
+  <circle cx="560" cy="400" r="210" fill="url(#sun)"/>
+  <circle cx="560" cy="400" r="62" fill="#f3b27a"/>
+
+  <path d="M0 420 L90 368 L190 404 L320 330 L430 396 L540 352 L660 410 L790 340 L920 405 L1060 346 L1200 400 L1200 640 L0 640Z" fill="#336f65" opacity=".75"/>
+  <path d="M0 470 C140 420 230 440 340 450 C470 462 520 410 650 430 C790 452 880 400 1010 428 C1100 446 1160 440 1200 432 L1200 640 L0 640Z" fill="#245a51"/>
+  <path d="M0 520 C120 490 240 505 360 515 C500 528 600 488 740 505 C880 522 1000 492 1200 510 L1200 640 L0 640Z" fill="#174540"/>
+
+  <rect x="0" y="566" width="1200" height="74" fill="#0d2321"/>
+  <rect x="0" y="566" width="1200" height="5" fill="#2a5a52"/>
+
+  <ellipse cx="860" cy="574" rx="190" ry="12" fill="#000" opacity=".28"/>
+
+  <path d="M730 566 C715 480 762 396 850 396 C938 396 985 480 970 566 Q968 574 958 574 L742 574 Q732 574 730 566Z" fill="url(#copper)"/>
+  <path d="M754 520 C752 470 782 428 826 418" fill="none" stroke="#ffd2a1" stroke-width="9" stroke-linecap="round" opacity=".45"/>
+  <path d="M740 548 C800 560 910 560 962 548" fill="none" stroke="#6a3112" stroke-width="5" opacity=".5"/>
+  <path d="M960 500 C1015 484 1042 440 1068 414 L1086 430 C1062 458 1038 520 966 548Z" fill="url(#copper)"/>
+  <path d="M742 480 C672 484 660 400 742 404" fill="none" stroke="#7d3d17" stroke-width="15" stroke-linecap="round"/>
+  <ellipse cx="850" cy="395" rx="62" ry="12" fill="#9a4c1e"/>
+  <path d="M800 392 C806 372 894 372 900 392Z" fill="url(#copper)"/>
+  <circle cx="850" cy="366" r="11" fill="#7d3d17"/>
+
+  <g transform="translate(1075 412)">
+    <path class="steam" d="M0 0 C-26 -38 24 -60 0 -104 C-18 -138 20 -156 6 -190"/>
+    <path class="steam s2" d="M10 -4 C34 -42 -10 -64 14 -110 C28 -140 -4 -160 12 -196"/>
+    <path class="steam s3" d="M-8 -2 C-34 -30 8 -58 -12 -92 C-26 -120 4 -140 -6 -170"/>
+  </g>
+</svg>

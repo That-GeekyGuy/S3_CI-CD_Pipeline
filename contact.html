@@ -4,54 +4,66 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact &mdash; The Copper Kettle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Young+Serif&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <span class="logo">The Copper Kettle</span>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html" aria-current="page">Contact</a>
-  </nav>
+<header class="site-header">
+  <div class="bar">
+    <a class="logo" href="index.html">The Copper Kettle</a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
 </header>
-<main>
+<div class="page-title"><div class="inner">
   <h1>Contact</h1>
-  <p class="tagline">Bookings, catering, or just to say the chai was good.</p>
+  <p>Bookings, catering, or just to say the chai was good.</p>
+</div></div>
+<main>
+  <div class="split">
+    <section aria-labelledby="find-h">
+      <h2 id="find-h">Find us</h2>
+      <p>
+        14 Mill Lane, Dehradun 248001<br>
+        Phone: <a href="tel:+911355550142">(0135) 555-0142</a><br>
+        Email: <a href="mailto:hello@copperkettle.example">hello@copperkettle.example</a>
+      </p>
+    </section>
 
-  <h2>Find us</h2>
-  <p>
-    14 Mill Lane, Dehradun 248001<br>
-    Phone: (0135) 555-0142<br>
-    Email: hello@copperkettle.example
-  </p>
-
-  <h2>Send a message</h2>
-  <form action="#" method="post">
-    <div>
-      <label for="name">Your name</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-      <label for="people">Number of people (for bookings)</label>
-      <input type="number" id="people" name="people" min="1" max="20">
-    </div>
-    <div>
-      <label for="date">Preferred date</label>
-      <input type="date" id="date" name="date">
-    </div>
-    <div>
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-    </div>
-    <button type="submit">Send</button>
-  </form>
+    <section aria-labelledby="msg-h">
+      <h2 id="msg-h">Send a message</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="people">Number of people (for bookings)</label>
+          <input type="number" id="people" name="people" min="1" max="20">
+        </div>
+        <div>
+          <label for="date">Preferred date</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </div>
 </main>
-<footer>
+<footer class="site-footer">
   <p>&copy; 2026 The Copper Kettle &middot; 14 Mill Lane, Dehradun &middot; (0135) 555-0142</p>
 </footer>
 </body>
